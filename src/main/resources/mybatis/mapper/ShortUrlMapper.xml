@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.testo.mapper.ShortUrlMapper">
+
+
+    <!--query short url from longUrl-->
+    <select id="queryShortUrl" resultType="com.testo.model.ShortUrl" parameterType="String">
+        SELECT *
+        FROM short_url
+        WHERE longUrl = #{longUrl,jdbcType=VARCHAR}
+    </select>
+
+
+    <!-- save -->
+    <insert id="save" parameterType="com.testo.model.ShortUrl">
+        insert into short_url(id, createUser, createDate, updateUser, updateDate, shortUrl, longUrl, shortTimes,
+                              accessTimes)
+        values (#{id,jdbcType=INTEGER}, #{createUser,jdbcType=VARCHAR}, #{createDate,jdbcType=DATE},
+                #{updateUser,jdbcType=VARCHAR}, #{updateDate,jdbcType=DATE}, #{shortUrl,jdbcType=VARCHAR},
+                #{longUrl,jdbcType=VARCHAR}, #{shortTimes,jdbcType=INTEGER}, #{accessTimes,jdbcType=INTEGER});
+    </insert>
+
+    <!-- update -->
+    <update id="update" parameterType="com.testo.model.ShortUrl">
+        update short_url
+        <trim prefix="set" suffixOverrides=",">
+            <if test="createUser != null and createUser != ''">
+                createUser = #{createUser,jdbcType=VARCHAR},
+            </if>
+            <if test="createDate != null">
+                createDate = #{createDate,jdbcType=DATE},
+            </if>
+            <if test="updateUser != null and updateUser != ''">
+                updateUser = #{updateUser,jdbcType=VARCHAR},
+            </if>
+            <if test="updateDate != null">
+                updateDate = #{updateDate,jdbcType=DATE},
+            </if>
+            <if test="shortUrl != null and shortUrl != ''">
+                shortUrl = #{shortUrl,jdbcType=VARCHAR},
+            </if>
+            <if test="longUrl != null and longUrl != ''">
+                longUrl = #{longUrl,jdbcType=VARCHAR},
+            </if>
+            <if test="shortTimes != null">
+                shortTimes = #{shortTimes,jdbcType=INTEGER},
+            </if>
+            <if test="accessTimes != null">
+                accessTimes = #{accessTimes,jdbcType=INTEGER},
+            </if>
+        </trim>
+        where id = #{id,jdbcType=INTEGER}
+    </update>
+
+    <!-- queryShortRecord -->
+    <select id="queryShortRecord" parameterType="String" resultType="com.testo.model.ShortUrl">
+        select * from short_url
+        <where>
+            <if test="username != null and username != ''">
+                and createUser = #{username,jdbcType=VARCHAR}
+            </if>
+        </where>
+    </select>
+
+</mapper>

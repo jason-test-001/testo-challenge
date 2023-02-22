@@ -1,0 +1,76 @@
+2023-02-22 11:28:29 [ main:624 ] - [ INFO ] Starting TestoChallengeApplication using Java 1.8.0_351 on 硕硕的电脑 with PID 17604 (C:\Users\马硕\IdeaProjects\com.springcloud\com.springcloud\springcloud\testo-challenge\target\classes started by 马硕 in C:\Users\马硕\IdeaProjects\com.springcloud\com.springcloud\springcloud\testo-challenge)
+2023-02-22 11:28:29 [ main:626 ] - [ INFO ] No active profile set, falling back to default profiles: default
+2023-02-22 11:28:30 [ main:1208 ] - [ INFO ] Bean 'shiroConfig' of type [com.testo.config.ShiroConfig$$EnhancerBySpringCGLIB$$956ce4e9] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-02-22 11:28:31 [ main:2446 ] - [ INFO ] Bean 'mybatis-org.mybatis.spring.boot.autoconfigure.MybatisProperties' of type [org.mybatis.spring.boot.autoconfigure.MybatisProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-02-22 11:28:31 [ main:2456 ] - [ INFO ] Bean 'org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration' of type [org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration$$EnhancerBySpringCGLIB$$230000f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-02-22 11:28:31 [ main:2460 ] - [ INFO ] Bean 'com.alibaba.druid.spring.boot.autoconfigure.DruidDataSourceAutoConfigure' of type [com.alibaba.druid.spring.boot.autoconfigure.DruidDataSourceAutoConfigure$$EnhancerBySpringCGLIB$$e907a451] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-02-22 11:28:31 [ main:2463 ] - [ INFO ] Init DruidDataSource
+2023-02-22 11:28:31 [ main:2534 ] - [ INFO ] Bean 'spring.datasource-org.springframework.boot.autoconfigure.jdbc.DataSourceProperties' of type [org.springframework.boot.autoconfigure.jdbc.DataSourceProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-02-22 11:28:31 [ main:2536 ] - [ INFO ] Bean 'com.alibaba.druid.spring.boot.autoconfigure.stat.DruidFilterConfiguration' of type [com.alibaba.druid.spring.boot.autoconfigure.stat.DruidFilterConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-02-22 11:28:31 [ main:2559 ] - [ INFO ] Bean 'statFilter' of type [com.alibaba.druid.filter.stat.StatFilter] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-02-22 11:28:31 [ main:2857 ] - [ INFO ] {dataSource-1} inited
+2023-02-22 11:28:31 [ main:2857 ] - [ INFO ] Bean 'dataSource' of type [com.alibaba.druid.spring.boot.autoconfigure.DruidDataSourceWrapper] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-02-22 11:28:31 [ main:3030 ] - [ INFO ] Bean 'sqlSessionFactory' of type [org.apache.ibatis.session.defaults.DefaultSqlSessionFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-02-22 11:28:32 [ main:3071 ] - [ INFO ] Bean 'sqlSessionTemplate' of type [org.mybatis.spring.SqlSessionTemplate] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-02-22 11:28:32 [ main:3073 ] - [ INFO ] Bean 'loginMapper' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-02-22 11:28:32 [ main:3074 ] - [ INFO ] Bean 'loginMapper' of type [com.sun.proxy.$Proxy50] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-02-22 11:28:32 [ main:3075 ] - [ INFO ] Bean 'loginServiceImpl' of type [com.testo.service.impl.LoginServiceImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-02-22 11:28:32 [ main:3075 ] - [ INFO ] Bean 'myShiroRealm' of type [com.testo.config.UserRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-02-22 11:28:32 [ main:3079 ] - [ INFO ] Bean 'securityManager' of type [org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-02-22 11:28:32 [ main:3102 ] - [ INFO ] Bean 'authorizationAttributeSourceAdvisor' of type [org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-02-22 11:28:32 [ main:3302 ] - [ INFO ] Tomcat initialized with port(s): 8077 (http)
+2023-02-22 11:28:32 [ main:3312 ] - [ INFO ] Initializing ProtocolHandler ["http-nio-8077"]
+2023-02-22 11:28:32 [ main:3313 ] - [ INFO ] Starting service [Tomcat]
+2023-02-22 11:28:32 [ main:3313 ] - [ INFO ] Starting Servlet engine: [Apache Tomcat/9.0.41]
+2023-02-22 11:28:32 [ main:3396 ] - [ INFO ] Initializing Spring embedded WebApplicationContext
+2023-02-22 11:28:32 [ main:3396 ] - [ INFO ] Root WebApplicationContext: initialization completed in 2737 ms
+2023-02-22 11:28:32 [ main:3616 ] - [ INFO ] Initializing ExecutorService 'applicationTaskExecutor'
+2023-02-22 11:28:32 [ main:3833 ] - [ INFO ] Starting ProtocolHandler ["http-nio-8077"]
+2023-02-22 11:28:32 [ main:3848 ] - [ INFO ] Tomcat started on port(s): 8077 (http) with context path ''
+2023-02-22 11:28:32 [ main:3855 ] - [ INFO ] Started TestoChallengeApplication in 3.708 seconds (JVM running for 5.886)
+2023-02-22 11:28:58 [ http-nio-8077-exec-2:29597 ] - [ INFO ] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-02-22 11:28:58 [ http-nio-8077-exec-2:29597 ] - [ INFO ] Initializing Servlet 'dispatcherServlet'
+2023-02-22 11:28:58 [ http-nio-8077-exec-2:29598 ] - [ INFO ] Completed initialization in 1 ms
+2023-02-22 11:28:58 [ http-nio-8077-exec-1:29634 ] - [ WARN ] Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required String parameter 'userName' is not present]
+2023-02-22 11:29:02 [ http-nio-8077-exec-4:33559 ] - [ INFO ] [{perId=U0001, roleId=200, roleName=common, perRemarks=query user own short url record., userName=jason, userId=20001, permissionsName=queryUserRecord}]
+2023-02-22 11:29:02 [ http-nio-8077-exec-4:33562 ] - [ INFO ] [{perId=U0001, roleId=200, roleName=common, perRemarks=query user own short url record., userName=jason, userId=20001, permissionsName=queryUserRecord}]
+2023-02-22 11:34:28 [ SpringContextShutdownHook:359981 ] - [ INFO ] Shutting down ExecutorService 'applicationTaskExecutor'
+2023-02-22 11:34:28 [ SpringContextShutdownHook:359983 ] - [ INFO ] {dataSource-1} closed
+2023-02-22 11:34:34 [ main:563 ] - [ INFO ] Starting TestoChallengeApplication using Java 1.8.0_351 on 硕硕的电脑 with PID 44856 (C:\Users\马硕\IdeaProjects\com.springcloud\com.springcloud\springcloud\testo-challenge\target\classes started by 马硕 in C:\Users\马硕\IdeaProjects\com.springcloud\com.springcloud\springcloud\testo-challenge)
+2023-02-22 11:34:34 [ main:565 ] - [ INFO ] No active profile set, falling back to default profiles: default
+2023-02-22 11:34:34 [ main:1130 ] - [ INFO ] Bean 'shiroConfig' of type [com.testo.config.ShiroConfig$$EnhancerBySpringCGLIB$$29422ab2] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-02-22 11:34:35 [ main:2117 ] - [ INFO ] Bean 'mybatis-org.mybatis.spring.boot.autoconfigure.MybatisProperties' of type [org.mybatis.spring.boot.autoconfigure.MybatisProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-02-22 11:34:35 [ main:2121 ] - [ INFO ] Bean 'org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration' of type [org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration$$EnhancerBySpringCGLIB$$960545d8] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-02-22 11:34:35 [ main:2123 ] - [ INFO ] Bean 'com.alibaba.druid.spring.boot.autoconfigure.DruidDataSourceAutoConfigure' of type [com.alibaba.druid.spring.boot.autoconfigure.DruidDataSourceAutoConfigure$$EnhancerBySpringCGLIB$$7cdcea1a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-02-22 11:34:35 [ main:2126 ] - [ INFO ] Init DruidDataSource
+2023-02-22 11:34:35 [ main:2166 ] - [ INFO ] Bean 'spring.datasource-org.springframework.boot.autoconfigure.jdbc.DataSourceProperties' of type [org.springframework.boot.autoconfigure.jdbc.DataSourceProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-02-22 11:34:35 [ main:2167 ] - [ INFO ] Bean 'com.alibaba.druid.spring.boot.autoconfigure.stat.DruidFilterConfiguration' of type [com.alibaba.druid.spring.boot.autoconfigure.stat.DruidFilterConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-02-22 11:34:35 [ main:2183 ] - [ INFO ] Bean 'statFilter' of type [com.alibaba.druid.filter.stat.StatFilter] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-02-22 11:34:35 [ main:2356 ] - [ INFO ] {dataSource-1} inited
+2023-02-22 11:34:35 [ main:2358 ] - [ INFO ] Bean 'dataSource' of type [com.alibaba.druid.spring.boot.autoconfigure.DruidDataSourceWrapper] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-02-22 11:34:36 [ main:2489 ] - [ INFO ] Bean 'sqlSessionFactory' of type [org.apache.ibatis.session.defaults.DefaultSqlSessionFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-02-22 11:34:36 [ main:2523 ] - [ INFO ] Bean 'sqlSessionTemplate' of type [org.mybatis.spring.SqlSessionTemplate] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-02-22 11:34:36 [ main:2524 ] - [ INFO ] Bean 'loginMapper' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-02-22 11:34:36 [ main:2525 ] - [ INFO ] Bean 'loginMapper' of type [com.sun.proxy.$Proxy50] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-02-22 11:34:36 [ main:2525 ] - [ INFO ] Bean 'loginServiceImpl' of type [com.testo.service.impl.LoginServiceImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-02-22 11:34:36 [ main:2526 ] - [ INFO ] Bean 'myShiroRealm' of type [com.testo.config.UserRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-02-22 11:34:36 [ main:2528 ] - [ INFO ] Bean 'securityManager' of type [org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-02-22 11:34:36 [ main:2548 ] - [ INFO ] Bean 'authorizationAttributeSourceAdvisor' of type [org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-02-22 11:34:36 [ main:2715 ] - [ INFO ] Tomcat initialized with port(s): 8077 (http)
+2023-02-22 11:34:36 [ main:2722 ] - [ INFO ] Initializing ProtocolHandler ["http-nio-8077"]
+2023-02-22 11:34:36 [ main:2722 ] - [ INFO ] Starting service [Tomcat]
+2023-02-22 11:34:36 [ main:2723 ] - [ INFO ] Starting Servlet engine: [Apache Tomcat/9.0.41]
+2023-02-22 11:34:36 [ main:2785 ] - [ INFO ] Initializing Spring embedded WebApplicationContext
+2023-02-22 11:34:36 [ main:2785 ] - [ INFO ] Root WebApplicationContext: initialization completed in 2187 ms
+2023-02-22 11:34:36 [ main:2969 ] - [ INFO ] Initializing ExecutorService 'applicationTaskExecutor'
+2023-02-22 11:34:36 [ main:3175 ] - [ INFO ] Starting ProtocolHandler ["http-nio-8077"]
+2023-02-22 11:34:36 [ main:3187 ] - [ INFO ] Tomcat started on port(s): 8077 (http) with context path ''
+2023-02-22 11:34:36 [ main:3194 ] - [ INFO ] Started TestoChallengeApplication in 3.06 seconds (JVM running for 5.043)
+2023-02-22 11:34:50 [ http-nio-8077-exec-1:16531 ] - [ INFO ] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-02-22 11:34:50 [ http-nio-8077-exec-1:16532 ] - [ INFO ] Initializing Servlet 'dispatcherServlet'
+2023-02-22 11:34:50 [ http-nio-8077-exec-1:16532 ] - [ INFO ] Completed initialization in 0 ms
+2023-02-22 11:34:50 [ http-nio-8077-exec-4:16567 ] - [ WARN ] Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required String parameter 'userName' is not present]
+2023-02-22 11:34:53 [ http-nio-8077-exec-3:20078 ] - [ INFO ] [{perId=U0001, roleId=200, roleName=common, perRemarks=query user own short url record., userName=jason, userId=20001, permissionsName=queryUserRecord}]
+2023-02-22 11:34:53 [ http-nio-8077-exec-3:20080 ] - [ INFO ] [{perId=U0001, roleId=200, roleName=common, perRemarks=query user own short url record., userName=jason, userId=20001, permissionsName=queryUserRecord}]
+2023-02-22 16:25:12 [ SpringContextShutdownHook:17438934 ] - [ INFO ] Shutting down ExecutorService 'applicationTaskExecutor'
+2023-02-22 16:25:12 [ SpringContextShutdownHook:17438945 ] - [ INFO ] {dataSource-1} closed
