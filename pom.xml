@@ -46,14 +46,6 @@
             <optional>true</optional>
         </dependency>
 
-        <!-- junit测试类 -->
-        <dependency>
-            <groupId>junit</groupId>
-            <artifactId>junit</artifactId>
-            <version>4.12</version>
-            <scope>test</scope>
-        </dependency>
-
         <!-- druid数据源驱动 1.1.10解决springboot从1.0——2.0版本问题-->
         <dependency>
             <groupId>com.alibaba</groupId>
@@ -82,12 +74,10 @@
             <version>1.4.0</version>
         </dependency>
 
-        <!-- https://mvnrepository.com/artifact/com.github.pagehelper/pagehelper -->
         <dependency>
             <groupId>com.github.pagehelper</groupId>
             <artifactId>pagehelper</artifactId>
             <version>5.3.2</version>
-            <!--            <version>5.2.0</version>-->
         </dependency>
 
         <dependency>
@@ -95,6 +85,24 @@
             <artifactId>spring-jdbc</artifactId>
             <version>5.3.4</version>
         </dependency>
+
+        <!-- JUnit5 -->
+        <dependency>
+            <groupId>org.junit.platform</groupId>
+            <artifactId>junit-platform-launcher</artifactId>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-engine</artifactId>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.junit.vintage</groupId>
+            <artifactId>junit-vintage-engine</artifactId>
+            <scope>test</scope>
+        </dependency>
+
 
     </dependencies>
 

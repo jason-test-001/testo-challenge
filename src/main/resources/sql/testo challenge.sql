@@ -101,4 +101,4 @@ INSERT INTO short_url (createUser,createDate,updateUser,updateDate,shortUrl,long
 ('jason','2023-02-21','kevin','2023-02-21','https://a.cn/EVRFr2','http://video.sinaA.com.cn/p/news/s/v/2015-09-02/105265067233.html',2,1),
 ('adminHong','2023-02-21','jason','2023-02-21','https://a.cn/EVRFr2','http://video.sinaA.com.cn/p/news/s/v/2015-09-02/105265067233.html',2,1),
 ('kevinjason','2023-02-21','admin','2023-02-22','https://a.cn/R7vimm','http://video.sina.com.cn/p/news/s/v/2015-09-02/105265067233.html',6,1),
-('customer','2023-02-21','customer','2023-02-21','https://a.cn/RFJNFr','http://video.sina.com.cn/p/news/sss/v/2015-09-02/105265067233.html',2,1);
+('visitor','2023-02-21','visitor','2023-02-21','https://a.cn/RFJNFr','http://video.sina.com.cn/p/news/sss/v/2015-09-02/105265067233.html',2,1);

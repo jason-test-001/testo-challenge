@@ -46,7 +46,7 @@ public class ShiroConfig {
     }
 
     /**
-     * the UserRealm are set to SecurityManager
+     * the UserRealm set to SecurityManager
      * SecurityManager are under control of the spring bean
      *
      * @return

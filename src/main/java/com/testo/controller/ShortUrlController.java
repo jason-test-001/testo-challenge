@@ -3,6 +3,7 @@ package com.testo.controller;
 import com.testo.model.ShortUrl;
 import com.testo.service.ShortUrlService;
 import lombok.extern.slf4j.Slf4j;
+import org.apache.shiro.authz.annotation.Logical;
 import org.apache.shiro.authz.annotation.RequiresPermissions;
 import org.apache.shiro.authz.annotation.RequiresRoles;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -26,7 +27,7 @@ public class ShortUrlController {
     private ShortUrlService shortUrlService;
 
     /**
-     * getShortUrl
+     * get short url
      *
      * @param longUrl
      * @return
@@ -37,25 +38,25 @@ public class ShortUrlController {
     }
 
     /**
-     * queryAllRecord
-     * only admin user(adminHong) can access this interface
+     * only admin(adminHong) user can access this interface
+     * get all statistic
      *
      * @return
      */
     @RequiresRoles("admin")
     @RequiresPermissions("queryAllRecord")
-        @RequestMapping("/queryAllRecord")
+    @RequestMapping("/queryAllRecord")
     public List<ShortUrl> queryAllRecord() {
         return shortUrlService.queryAllRecord();
     }
 
     /**
-     * queryUserRecord
-     * common(jason、kevin) user can access this interface
+     * not only common(jason、kevin) but also admin(adminHong) can access this interface
+     * to get their own statistic
      *
      * @return
      */
-    @RequiresRoles("common")
+    @RequiresRoles(value = {"admin", "common"}, logical = Logical.OR)
     @RequiresPermissions("queryUserRecord")
     @RequestMapping("/queryUserRecord")
     public List<ShortUrl> queryUserRecord() {

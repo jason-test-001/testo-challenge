@@ -26,11 +26,11 @@ public class LoginController {
     LoginService loginService;
 
     @RequestMapping("/login")
-    public String login(@RequestParam("userName") String userName, @RequestParam("password") String password) {
+    public String login(@RequestParam("username") String username, @RequestParam("password") String password) {
         Subject subject = SecurityUtils.getSubject();
         String md5Password = DigestUtils.md5DigestAsHex(password.getBytes());
 
-        UsernamePasswordToken usernamePasswordToken = new UsernamePasswordToken(userName, md5Password);
+        UsernamePasswordToken usernamePasswordToken = new UsernamePasswordToken(username, md5Password);
         try {
             subject.login(usernamePasswordToken);
         } catch (AuthenticationException e) {

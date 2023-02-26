@@ -42,7 +42,7 @@ public class UserRealm extends AuthorizingRealm {
         SimpleAuthorizationInfo simpleAuthorizationInfo = new SimpleAuthorizationInfo();
 
         List<Map<String, Object>> powerList = loginService.getUserPower(userName);
-        log.info(powerList.toString());
+
         for (Map<String, Object> powerMap : powerList) {
             simpleAuthorizationInfo.addRole(String.valueOf(powerMap.get("roleName")));
             simpleAuthorizationInfo.addStringPermission(String.valueOf(powerMap.get("permissionsName")));
